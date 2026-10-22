@@ -87,7 +87,7 @@ export async function detectSelectors({ url, html, validate, llmConfig = {}, log
 }
 
 // Preferred models from config first, then (by default) whatever free models OpenRouter
-// currently lists, largest context first.
+// currently lists: benchmarked ones by score, then the rest, then the openrouter/free router.
 async function candidateModels(cfg, htmlChars) {
   const available = await listModels().catch((err) => {
     console.log(`::warning::could not list OpenRouter models: ${err.message}`);
@@ -108,8 +108,10 @@ async function candidateModels(cfg, htmlChars) {
       ? []
       : available
           .filter((m) => isFree(m) && !exclude.has(m.id) && (m.context_length ?? 0) >= minContext)
-          .filter((m) => (m.architecture?.output_modalities ?? ['text']).includes('text'))
-          .sort((a, b) => (b.context_length ?? 0) - (a.context_length ?? 0));
+          // Text-only output: skips music/image generators. Guard models only classify.
+          .filter((m) => (m.architecture?.output_modalities ?? ['text']).join() === 'text')
+          .filter((m) => !/guard|safety|moderat/i.test(m.id))
+          .sort((a, b) => rank(b) - rank(a) || (b.context_length ?? 0) - (a.context_length ?? 0));
 
   const seen = new Set();
   return [...preferred, ...free]
@@ -127,14 +129,27 @@ async function listModels() {
   return modelsCache;
 }
 
+// Artificial Analysis indexes from the OpenRouter model list; unbenchmarked models go after
+// benchmarked ones, and the random free-model router goes last.
+function rank(m) {
+  if (m.id === 'openrouter/free') return -2;
+  const aa = m.benchmarks?.artificial_analysis;
+  if (!aa || (aa.coding_index == null && aa.intelligence_index == null)) return -1;
+  return (aa.coding_index ?? 0) + (aa.intelligence_index ?? 0);
+}
+
 function isFree(m) {
   return m.id.endsWith(':free') || (Number(m.pricing?.prompt) === 0 && Number(m.pricing?.completion) === 0);
 }
 
 async function chat(model, messages) {
-  const body = { model: model.id, messages, temperature: 0, max_tokens: 4_000 };
+  // Generous max_tokens: for reasoning models the thinking counts against it too.
+  const body = { model: model.id, messages, temperature: 0, max_tokens: 16_000 };
   if (model.supported_parameters?.includes('response_format')) {
     body.response_format = { type: 'json_object' };
+  }
+  if (model.supported_parameters?.includes('reasoning')) {
+    body.reasoning = { effort: 'low', exclude: true };
   }
 
   const res = await fetch(`${BASE_URL}/chat/completions`, {
