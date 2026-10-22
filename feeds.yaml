@@ -39,10 +39,6 @@ feeds:
     title: Shopify Engineering
     url: https://shopify.engineering/latest
 
-  - id: x-engineering
-    title: X Engineering Blog
-    url: https://blog.x.com/en/engineering
-
   - id: linkedin-engineering
     title: LinkedIn Engineering
     url: https://www.linkedin.com/blog/engineering
