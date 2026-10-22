@@ -133,11 +133,11 @@ async function candidateModels(cfg, htmlChars) {
     return null;
   });
   const byId = new Map((available ?? []).map((m) => [m.id, m]));
-  const exclude = new Set(cfg.exclude ?? []);
+  const excluded = excludeMatcher(cfg.exclude);
   const minContext = Math.ceil(htmlChars / 3) + 4_000; // rough chars->tokens plus room for the answer
 
   const preferred = (cfg.models ?? [])
-    .filter((id) => !exclude.has(id))
+    .filter((id) => !excluded(id))
     // Skip preferred models that disappeared from OpenRouter; keep all if the list is unavailable.
     .filter((id) => !available || byId.has(id))
     .map((id) => byId.get(id) ?? { id });
@@ -146,7 +146,7 @@ async function candidateModels(cfg, htmlChars) {
     cfg.free_models === false || !available
       ? []
       : available
-          .filter((m) => isFree(m) && !exclude.has(m.id) && (m.context_length ?? 0) >= minContext)
+          .filter((m) => isFree(m) && !excluded(m.id) && (m.context_length ?? 0) >= minContext)
           // Text-only output: skips music/image generators. Guard models only classify.
           .filter((m) => (m.architecture?.output_modalities ?? ['text']).join() === 'text')
           .filter((m) => !/guard|safety|moderat/i.test(m.id))
@@ -155,6 +155,14 @@ async function candidateModels(cfg, htmlChars) {
   // No cap here: max_models limits models that actually answer, see detectSelectors.
   const seen = new Set();
   return [...preferred, ...free].filter((m) => !seen.has(m.id) && seen.add(m.id));
+}
+
+// Exclude entries are model ids, "*" matches any characters: "thinkingmachines/inkling*".
+function excludeMatcher(patterns) {
+  const regexes = (patterns ?? []).map(
+    (p) => new RegExp(`^${p.split('*').map((s) => s.replace(/[.+?^${}()|[\]\\]/g, '\\$&')).join('.*')}$`),
+  );
+  return (id) => regexes.some((re) => re.test(id));
 }
 
 let modelsCache;

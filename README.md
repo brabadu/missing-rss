@@ -43,8 +43,10 @@ fetches the current `/models` and takes free text-only models with enough contex
 music/image generators or guard classifiers), ranked by the Artificial Analysis benchmarks that
 OpenRouter returns in the same list (coding + intelligence index). Models without benchmarks
 come next, and the `openrouter/free` router goes last. In `feeds.yaml`, `llm.models` sets models
-to try first and `llm.exclude` bans models that give poor results. A model that disappeared from
-OpenRouter is simply skipped.
+to try first and `llm.exclude` bans models that give poor results or don't work through the API
+(`*` wildcards allowed, e.g. `thinkingmachines/inkling*`). A model that disappeared from
+OpenRouter is simply skipped, and a model that returns an error is not asked again for the
+remaining feeds of the run.
 
 Thanks to caching, the LLM is called rarely, so free-model limits (~50 requests a day without
 credits) aren't a problem.
