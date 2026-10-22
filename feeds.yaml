@@ -30,3 +30,19 @@ feeds:
   - id: anthropic-engineering
     title: Anthropic Engineering
     url: https://www.anthropic.com/engineering
+
+  - id: meta-ai-blog
+    title: Meta AI Developer Blog
+    url: https://dev.meta.ai/resources/blog
+
+  - id: shopify-engineering
+    title: Shopify Engineering
+    url: https://shopify.engineering/latest
+
+  - id: x-engineering
+    title: X Engineering Blog
+    url: https://blog.x.com/en/engineering
+
+  - id: linkedin-engineering
+    title: LinkedIn Engineering
+    url: https://www.linkedin.com/blog/engineering
