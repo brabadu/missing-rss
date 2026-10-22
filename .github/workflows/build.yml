@@ -58,5 +58,6 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true
+          cname: rss.brabadu.com # force_orphan wipes the CNAME file, so recreate it on every deploy
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
