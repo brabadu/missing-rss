@@ -1,0 +1,63 @@
+name: Build RSS feeds
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # daily at 05:17 UTC
+  workflow_dispatch:
+    inputs:
+      redetect:
+        description: Re-detect selectors with the LLM for all feeds without manual selectors
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["feeds.yaml", "src/**", "package*.json", ".github/workflows/build.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-feeds
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Previously published feeds: keeps item history and first-seen dates.
+      - name: Fetch previously published feeds
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: public
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build feeds
+        run: npm run build
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          REDETECT: ${{ inputs.redetect }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
+          exclude_assets: ".git,.github"
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com

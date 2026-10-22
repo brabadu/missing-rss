@@ -1,0 +1,23 @@
+{
+  "name": "missing-rss",
+  "version": "1.0.0",
+  "description": "Playwright-based RSS feeds for sites without them",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "mock-openrouter": "node test/mock-openrouter.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brabadu/missing-rss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brabadu/missing-rss/issues"
+  },
+  "homepage": "https://github.com/brabadu/missing-rss#readme",
+  "dependencies": {
+    "playwright": "^1.56.1",
+    "yaml": "^2.9.1"
+  },
+  "private": true,
+  "type": "module"
+}
