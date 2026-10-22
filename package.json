@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Playwright-based RSS feeds for sites without them",
   "scripts": {
-    "build": "node src/build.mjs"
+    "build": "node src/build.mjs",
+    "mock-openrouter": "node test/mock-openrouter.mjs"
   },
   "repository": {
     "type": "git",

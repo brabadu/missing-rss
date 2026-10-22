@@ -4,22 +4,27 @@ site:
   description: RSS-фіди для сайтів, у яких їх немає
   # base_url: https://brabadu.github.io/missing-rss  # якщо не задано — береться з env SITE_URL
 
-# Список фідів. Поля:
-#   id           — ім'я файлу фіду (<id>.xml)
-#   title        — назва фіду
-#   url          — сторінка зі списком публікацій
-#   item         — CSS-селектор одного елемента списку (картки статті)
-#   title_selector       — (опц.) селектор заголовка всередині item; за замовчуванням — текст item
-#   link_selector        — (опц.) селектор посилання всередині item; за замовчуванням — сам item (якщо це <a>) або перший <a>
-#   date_selector        — (опц.) селектор дати; береться атрибут datetime або текст
-#   description_selector — (опц.) селектор опису/анонсу
-#   wait_for     — (опц.) селектор, якого чекати перед парсингом (за замовчуванням = item)
-#   max_items    — (опц.) скільки елементів тримати у фіді (за замовчуванням 50)
+# LLM (OpenRouter) підбирає CSS-селектори для фідів, де їх не задано вручну.
+# Ключ — у змінній середовища OPENROUTER_API_KEY (секрет репозиторію).
+llm:
+  # Моделі, які пробувати першими (по черзі). Ті, що зникли з OpenRouter, пропускаються.
+  models: []
+  #  - deepseek/deepseek-chat-v3-0324:free
+  free_models: true    # далі — усі безкоштовні моделі, які OpenRouter має зараз, від найбільшого контексту
+  max_models: 5        # скільки різних моделей пробувати для одного фіду
+  repair_rounds: 1     # скільки разів просити модель виправити селектори, які не пройшли перевірку
+  exclude: []          # моделі, які ніколи не використовувати
+  # max_html_chars: 60000
+
+# Список фідів. Достатньо id і url:
+#   id        — ім'я файлу фіду (<id>.xml)
+#   url       — сторінка зі списком публікацій
+#   title     — (опц.) назва фіду; за замовчуванням — <title> сторінки
+#   selectors — (опц.) ручні селектори {item, title, link, date, description}; тоді LLM не використовується
+#   wait_for  — (опц.) селектор, якого чекати після завантаження сторінки
+#   min_items — (опц.) мінімум статей, щоб вважати селектори робочими (3)
+#   max_items — (опц.) скільки статей тримати у фіді (50)
 feeds:
   - id: anthropic-engineering
     title: Anthropic Engineering
     url: https://www.anthropic.com/engineering
-    item: "article[data-listing-row]"
-    title_selector: h3
-    link_selector: h3 a
-    date_selector: time
