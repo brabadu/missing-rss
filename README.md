@@ -1,13 +1,13 @@
 # missing-rss
 
-RSS-фіди для сайтів, у яких їх немає. Раз на добу GitHub Actions відкриває сторінки зі
-списку в [`feeds.yaml`](feeds.yaml) через Playwright (headless Chromium), витягує статті і
-публікує RSS на GitHub Pages. CSS-селектори для кожного сайту підбирає LLM через OpenRouter.
+RSS feeds for sites that don't have one. Once a day GitHub Actions opens the pages listed in
+[`feeds.yaml`](feeds.yaml) with Playwright (headless Chromium), extracts the articles and
+publishes RSS to GitHub Pages. CSS selectors for each site are found by an LLM via OpenRouter.
 
-Фіди: `https://<user>.github.io/missing-rss/<id>.xml`, список усіх — на головній сторінці,
-OPML для імпорту в рідер — `feeds.opml`.
+Feeds live at `https://<user>.github.io/missing-rss/<id>.xml`; the home page lists them all,
+and `feeds.opml` imports them into a reader in one go.
 
-## Як додати сайт
+## Adding a site
 
 ```yaml
 feeds:
@@ -15,62 +15,64 @@ feeds:
     url: https://example.com/blog
 ```
 
-Цього достатньо. За бажанням можна задати `title`, `min_items`, `max_items`, `wait_for` або
-ручні `selectors: {item, title, link, date, description}` — тоді LLM для цього фіду не
-використовується.
+That's enough. Optionally set `title`, `min_items`, `max_items`, `wait_for`, or manual
+`selectors: {item, title, link, date, description}`, in which case the LLM is not used for
+that feed.
 
-## Як працює LLM
+## How the LLM is used
 
-LLM не парсить статті щодня — вона **один раз підбирає селектори**, далі скрейпінг
-детермінований:
+The LLM doesn't parse articles every day — it **finds selectors once**, and scraping is
+deterministic after that:
 
-1. Сторінка завантажується, з неї робиться стиснутий HTML: без скриптів, стилів, svg, nav/footer,
-   з короткими текстами і згорнутими однотипними елементами (`<!-- 20 more similar -->`).
-   Типова сторінка — 10–20 тис. символів.
-2. Модель повертає JSON `{item, title, link, date, description}`.
-3. Селектори **перевіряються на живій сторінці**: мінімум 3 статті із заголовком і посиланням,
-   різні заголовки, адекватна довжина. Дата, яка не парситься, просто відкидається.
-4. Якщо перевірка не пройшла — модель отримує опис проблеми і перші витягнуті елементи і
-   пробує виправити (`repair_rounds`). Не вийшло, помилка API, rate limit — наступна модель.
-5. Робочі селектори кешуються в `<id>.json` (разом з назвою моделі). Наступні запуски LLM не
-   викликають, поки селектори працюють. Коли сайт змінює верстку (або хешовані класи після
-   деплою) і перевірка падає — селектори підбираються заново автоматично.
+1. The page is loaded and turned into compact HTML: no scripts, styles, svg or nav/footer,
+   short texts, and runs of similar elements collapsed (`<!-- 20 more similar -->`).
+   A typical page is 10–20k characters.
+2. The model returns JSON `{item, title, link, date, description}`.
+3. The selectors are **validated against the live page**: at least 3 articles with a title and
+   a link, distinct titles, sensible title length. A date that doesn't parse is simply dropped.
+4. If validation fails, the model gets the problem description and the first extracted items
+   and tries to fix its answer (`repair_rounds`). Still failing, an API error or a rate
+   limit — on to the next model.
+5. Working selectors are cached in `<id>.json` (together with the model name). Later runs don't
+   call the LLM while the selectors keep working. When the site changes its markup (or its
+   hashed class names after a deploy) and validation fails, selectors are re-detected
+   automatically.
 
-**Моделі.** Безкоштовні моделі на OpenRouter з'являються і зникають, тому список не зашитий
-у код: на кожному запуску береться актуальний `/models`, з нього — безкоштовні текстові моделі
-з достатнім контекстом (без генераторів музики/картинок і guard-класифікаторів), відсортовані за
-бенчмарками Artificial Analysis, які OpenRouter віддає в тому ж списку (coding + intelligence
-index). Далі — моделі без бенчмарків, останнім — роутер `openrouter/free`. У `feeds.yaml` → `llm.models` можна задати моделі, які
-пробувати першими, а в `llm.exclude` — ті, що дають погані результати. Модель, яка зникла з
-OpenRouter, просто пропускається.
+**Models.** Free models on OpenRouter come and go, so the list isn't hard-coded: every run
+fetches the current `/models` and takes free text-only models with enough context (no
+music/image generators or guard classifiers), ranked by the Artificial Analysis benchmarks that
+OpenRouter returns in the same list (coding + intelligence index). Models without benchmarks
+come next, and the `openrouter/free` router goes last. In `feeds.yaml`, `llm.models` sets models
+to try first and `llm.exclude` bans models that give poor results. A model that disappeared from
+OpenRouter is simply skipped.
 
-Через кешування LLM викликається рідко, тож ліміти безкоштовних моделей (~50 запитів на добу
-без кредитів) не проблема.
+Thanks to caching, the LLM is called rarely, so free-model limits (~50 requests a day without
+credits) aren't a problem.
 
-## Налаштування (один раз)
+## Setup (once)
 
 1. Settings → Secrets and variables → Actions → New repository secret:
-   `OPENROUTER_API_KEY` = ключ з https://openrouter.ai/keys.
-2. Запустіть workflow **Build RSS feeds** (Actions → Run workflow) — він створить гілку `gh-pages`.
-3. Settings → Pages → Source: **Deploy from a branch**, гілка `gh-pages`, папка `/ (root)`.
+   `OPENROUTER_API_KEY` = a key from https://openrouter.ai/keys.
+2. Run the **Build RSS feeds** workflow (Actions → Run workflow) — it creates the `gh-pages` branch.
+3. Settings → Pages → Source: **Deploy from a branch**, branch `gh-pages`, folder `/ (root)`.
 
-Workflow запускається щодня о 05:17 UTC, вручну і при зміні конфігу. Ручний запуск з
-галочкою `redetect` заново підбирає селектори для всіх фідів. Якщо фід зламався, у лозі
-Actions з'являється помилка, а попередня версія цього фіду лишається опублікованою.
+The workflow runs daily at 05:17 UTC, on demand, and when the config changes. A manual run with
+`redetect` checked re-detects selectors for all feeds. If a feed breaks, an error shows up in the
+Actions log and the previously published version of that feed stays online.
 
-## Локально
+## Running locally
 
 ```sh
 npm ci
 npx playwright install chromium
-OPENROUTER_API_KEY=sk-or-... node src/build.mjs my-blog     # або без id — усі фіди
-node src/build.mjs --redetect my-blog                         # ігнорувати кеш селекторів
+OPENROUTER_API_KEY=sk-or-... node src/build.mjs my-blog     # or no id for all feeds
+node src/build.mjs --redetect my-blog                         # ignore cached selectors
 cat public/my-blog.xml public/my-blog.json
 ```
 
-`public/` локально — це той самий стан, що й гілка `gh-pages` у CI.
+Locally, `public/` holds the same state as the `gh-pages` branch does in CI.
 
-Перевірити LLM-логіку без ключа можна з фейковим OpenRouter (`test/mock-openrouter.mjs`):
+To exercise the LLM logic without a key, use the fake OpenRouter (`test/mock-openrouter.mjs`):
 
 ```sh
 npm run mock-openrouter &
