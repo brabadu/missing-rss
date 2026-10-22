@@ -1,29 +1,29 @@
-# Глобальні налаштування сайту
+# Site-wide settings
 site:
   title: Missing RSS
-  description: RSS-фіди для сайтів, у яких їх немає
-  # base_url: https://brabadu.github.io/missing-rss  # якщо не задано — береться з env SITE_URL
+  description: RSS feeds for sites that don't have one
+  # base_url: https://brabadu.github.io/missing-rss  # defaults to the SITE_URL env variable
 
-# LLM (OpenRouter) підбирає CSS-селектори для фідів, де їх не задано вручну.
-# Ключ — у змінній середовища OPENROUTER_API_KEY (секрет репозиторію).
+# The LLM (via OpenRouter) finds CSS selectors for feeds that don't define them manually.
+# The key is read from the OPENROUTER_API_KEY environment variable (a repository secret).
 llm:
-  # Моделі, які пробувати першими (по черзі). Ті, що зникли з OpenRouter, пропускаються.
+  # Models to try first, in order. Models that no longer exist on OpenRouter are skipped.
   models: []
   #  - deepseek/deepseek-chat-v3-0324:free
-  free_models: true    # далі — усі безкоштовні моделі, які OpenRouter має зараз, найкращі за бенчмарками першими
-  max_models: 5        # скільки різних моделей пробувати для одного фіду
-  repair_rounds: 1     # скільки разів просити модель виправити селектори, які не пройшли перевірку
-  exclude: []          # моделі, які ніколи не використовувати
+  free_models: true    # then every free model OpenRouter currently lists, best benchmarks first
+  max_models: 5        # how many different models to try per feed
+  repair_rounds: 1     # how many times to ask a model to fix selectors that failed validation
+  exclude: []          # models never to use
   # max_html_chars: 60000
 
-# Список фідів. Достатньо id і url:
-#   id        — ім'я файлу фіду (<id>.xml)
-#   url       — сторінка зі списком публікацій
-#   title     — (опц.) назва фіду; за замовчуванням — <title> сторінки
-#   selectors — (опц.) ручні селектори {item, title, link, date, description}; тоді LLM не використовується
-#   wait_for  — (опц.) селектор, якого чекати після завантаження сторінки
-#   min_items — (опц.) мінімум статей, щоб вважати селектори робочими (3)
-#   max_items — (опц.) скільки статей тримати у фіді (50)
+# Feeds. Only id and url are required:
+#   id        — feed file name (<id>.xml)
+#   url       — page that lists the publications
+#   title     — (optional) feed title; defaults to the page <title>
+#   selectors — (optional) manual selectors {item, title, link, date, description}; the LLM is not used then
+#   wait_for  — (optional) selector to wait for after the page loads
+#   min_items — (optional) minimum number of items for selectors to count as working (3)
+#   max_items — (optional) how many items to keep in the feed (50)
 feeds:
   - id: anthropic-engineering
     title: Anthropic Engineering
