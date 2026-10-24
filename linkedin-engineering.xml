@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LinkedIn Engineering</title>
+    <link>https://www.linkedin.com/blog/engineering</link>
+    <description>Unofficial RSS feed for https://www.linkedin.com/blog/engineering</description>
+    <atom:link href="https://brabadu.github.io/missing-rss/linkedin-engineering.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 24 Oct 2026 09:32:33 GMT</lastBuildDate>
+    <item>
+      <title>From Member Tap to Backend: How LinkedIn Traced the Member Jou...</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/from-membertap-to-backend-how-linkedin-traced-the-member-journey-with-opentelemetry</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/from-membertap-to-backend-how-linkedin-traced-the-member-journey-with-opentelemetry</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Rebuilding LinkedIn's Tracking Infrastructure: Scaling, Migrat...</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/rebuilding-linkedins-tracking-infrastructure-scaling-migrating-and-hardening-a-high-volume-event-pipeline</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/rebuilding-linkedins-tracking-infrastructure-scaling-migrating-and-hardening-a-high-volume-event-pipeline</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Scaling Spark and Flink Shuffle at LinkedIn with Apache Celeborn</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Inside LinkedIn's data context layer: curating trustworthy con...</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/inside-linkedins-data-context-layer-curating-trustworthy-context-for-humans-and-agents</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/inside-linkedins-data-context-layer-curating-trustworthy-context-for-humans-and-agents</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Infrastructure efficiency: How a classic math problem helped r...</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/infrastructure-efficiency-how-a-classic-math-problem-helped-reduced-our-capacity-buffers</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/infrastructure-efficiency-how-a-classic-math-problem-helped-reduced-our-capacity-buffers</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Announcing Our LinkedIn-Cornell 2026 Grant Recipients</title>
+      <link>https://www.linkedin.com/blog/engineering/culture/announcing-our-linkedin-cornell-2026-grant-recipients</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/culture/announcing-our-linkedin-cornell-2026-grant-recipients</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Building LinkedIn Premium All‑in‑One: Unified AI‑Powered Workf...</title>
+      <link>https://www.linkedin.com/blog/engineering/member-customer-experience/building-linkedin-premium-all-in-one-unified-ai-powered-workflows-for-small-businesses</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/member-customer-experience/building-linkedin-premium-all-in-one-unified-ai-powered-workflows-for-small-businesses</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Rebuilding LinkedIn’s Follows Recommendations with LLM-Based S...</title>
+      <link>https://www.linkedin.com/blog/engineering/ai/rebuilding-linkedins-follows-recommendations-with-llm-based-semantic-retrieval-and-ranking</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/ai/rebuilding-linkedins-follows-recommendations-with-llm-based-semantic-retrieval-and-ranking</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>High-Signal AI Code Review That Adapts to Your Codebase at Scale</title>
+      <link>https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The Training Infrastructure Behind AI-Powered Job Search: 8X F...</title>
+      <link>https://www.linkedin.com/blog/engineering/infrastructure/the-training-infrastructure-behind-ai-powered-job-search-eight-x-faster-multi-teacher-distillation</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/infrastructure/the-training-infrastructure-behind-ai-powered-job-search-eight-x-faster-multi-teacher-distillation</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Quality Assurance Agent: Reimagining Software Quality with AI-...</title>
+      <link>https://www.linkedin.com/blog/engineering/ai/qa-agent-reimagining-software-quality-with-ai-driven-autonomous-testing</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/ai/qa-agent-reimagining-software-quality-with-ai-driven-autonomous-testing</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Accelerating Go-To-Market Velocity with the Product Configurat...</title>
+      <link>https://www.linkedin.com/blog/engineering/platform-platformization/accelerating-go-to-market-velocity-with-the-product-configuration-center</link>
+      <guid isPermaLink="true">https://www.linkedin.com/blog/engineering/platform-platformization/accelerating-go-to-market-velocity-with-the-product-configuration-center</guid>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

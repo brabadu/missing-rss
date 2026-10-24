@@ -1,0 +1,49 @@
+{
+  "title": "Shopify Engineering",
+  "selectors": {
+    "item": "article.article--index",
+    "title": ".blogPost [class*='tracking'] a",
+    "link": ".blogPost [class*='tracking'] a",
+    "date": ".blogPost .richtext",
+    "description": null,
+    "model": "cohere/north-mini-code:free",
+    "detected_at": "2026-10-22T20:29:05.773Z"
+  },
+  "items": [
+    {
+      "title": "Mobile",
+      "link": "https://shopify.engineering/topics/mobile",
+      "description": "",
+      "firstSeen": "2026-10-22T20:29:05.773Z",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "title": "AI & Machine Learning",
+      "link": "https://shopify.engineering/topics/ai-machine-learning",
+      "description": "",
+      "firstSeen": "2026-10-22T20:29:05.773Z",
+      "date": "2026-10-21T00:00:00.000Z"
+    },
+    {
+      "title": "Apps",
+      "link": "https://shopify.engineering/topics/apps",
+      "description": "",
+      "firstSeen": "2026-10-22T20:29:05.773Z",
+      "date": "2026-07-16T00:00:00.000Z"
+    },
+    {
+      "title": "Culture",
+      "link": "https://shopify.engineering/topics/culture",
+      "description": "",
+      "firstSeen": "2026-10-22T20:29:05.773Z",
+      "date": "2026-07-14T00:00:00.000Z"
+    },
+    {
+      "title": "Infrastructure",
+      "link": "https://shopify.engineering/topics/infrastructure",
+      "description": "",
+      "firstSeen": "2026-10-22T20:29:05.773Z",
+      "date": "2026-05-28T00:00:00.000Z"
+    }
+  ]
+}
