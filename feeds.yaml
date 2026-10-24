@@ -50,3 +50,7 @@ feeds:
   - id: dx-newsletter
     title: Engineering Enablement by DX
     url: https://newsletter.getdx.com/archive
+
+  - id: papers-with-backtest
+    title: Papers With Backtest
+    url: https://substack.com/@paperswithbacktest
