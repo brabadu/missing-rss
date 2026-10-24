@@ -42,3 +42,11 @@ feeds:
   - id: linkedin-engineering
     title: LinkedIn Engineering
     url: https://www.linkedin.com/blog/engineering
+
+  - id: pointer
+    title: Pointer
+    url: https://pointerio.beehiiv.com
+
+  - id: dx-newsletter
+    title: Engineering Enablement by DX
+    url: https://newsletter.getdx.com/archive
