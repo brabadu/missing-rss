@@ -1,0 +1,364 @@
+{
+  "title": "Engineering Enablement by DX",
+  "selectors": {
+    "item": "div[role=\"article\"]",
+    "title": "a[data-testid=\"post-preview-title\"]",
+    "link": "a[data-testid=\"post-preview-title\"]",
+    "date": "time.date-rtYe1v",
+    "description": "a.color-primary-ECDxTd",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "detected_at": "2026-10-24T17:22:12.621Z"
+  },
+  "items": [
+    {
+      "title": "Roblox’s approach to tripling AI code review acceptance rates",
+      "link": "https://newsletter.getdx.com/p/robloxs-approach-to-tripling-ai-code",
+      "description": "Andrew Swerdlow shares how Roblox is building trust in AI agents to autonomously review, test, and deploy code and what that means for engineers.",
+      "firstSeen": "2026-10-31T10:55:52.068Z",
+      "date": "2026-10-30T14:33:04.053Z"
+    },
+    {
+      "title": "You can’t find 10x developers, but you can build 10x organizations",
+      "link": "https://newsletter.getdx.com/p/you-cant-find-10x-developers",
+      "description": "Part I: The Coding War Games, a study behind the 10x developer myth.",
+      "firstSeen": "2026-10-28T11:20:58.928Z",
+      "date": "2026-10-28T10:02:34.481Z"
+    },
+    {
+      "title": "AI made developers faster. Is their judgment keeping up?",
+      "link": "https://newsletter.getdx.com/p/ai-made-developers-faster-is-their",
+      "description": "A study of 331 Microsoft developers on where AI makes them faster, go further, or start afresh.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-10-21T10:03:02.088Z"
+    },
+    {
+      "title": "The CAFE(S) framework: Improving AI agent effectiveness",
+      "link": "https://newsletter.getdx.com/p/the-cafes-framework-improving-ai",
+      "description": "Brian Houck and his co-authors explore how the CAFE(S) framework helps engineering teams improve context quality, reduce costly AI failures, and make…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-10-16T14:21:30.785Z"
+    },
+    {
+      "title": "The gap between code velocity and trust is growing",
+      "link": "https://newsletter.getdx.com/p/the-gap-between-code-velocity-and",
+      "description": "Throughput is up 75.5% in a year, but organizations with the most AI-authored code wait 105% longer for a first review.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-10-14T10:47:59.650Z"
+    },
+    {
+      "title": "Don’t measure AI Code Percentage on its own",
+      "link": "https://newsletter.getdx.com/p/dont-measure-ai-code-percentage-on",
+      "description": "Treat it like a lens, not a KPI.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-10-07T09:02:53.791Z"
+    },
+    {
+      "title": "How Meta reduced diff authoring time by 40%",
+      "link": "https://newsletter.getdx.com/p/how-meta-reduced-diff-authoring-time",
+      "description": "Meta researcher Moritz Beller shares how Meta measures developer productivity and how AI is changing engineers’ work, metrics, and testing.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-10-02T14:40:54.205Z"
+    },
+    {
+      "title": "Do you really need another framework?",
+      "link": "https://newsletter.getdx.com/p/do-you-really-need-another-framework",
+      "description": "Where CAFE(S) fits with your existing measurement and evaluation stack.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-30T10:01:34.663Z"
+    },
+    {
+      "title": "Introducing CAFE(S): A framework for defining AI context quality",
+      "link": "https://newsletter.getdx.com/p/introducing-cafes-a-framework-for",
+      "description": "Five durable properties for evaluating the context we hand to AI agents.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-24T16:42:16.638Z"
+    },
+    {
+      "title": "Your agent doesn't have a model problem",
+      "link": "https://newsletter.getdx.com/p/your-agent-doesnt-have-a-model-problem",
+      "description": "The context problems humans have been quietly fixing for decades and what happens when agents inherit them.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-16T10:03:38.668Z"
+    },
+    {
+      "title": "How Okta sets guardrails and context for AI agents",
+      "link": "https://newsletter.getdx.com/p/how-okta-governs-ai-agents-at-enterprise",
+      "description": "Okta Chief Architect Robert Lucero explains how organizations can securely deploy AI agents while improving engineering productivity, testing, and…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-11T15:26:03.346Z"
+    },
+    {
+      "title": "AI accelerates output, not innovation",
+      "link": "https://newsletter.getdx.com/p/ai-accelerates-output-not-innovation",
+      "description": "AI output explains 63% of developer time savings but shows a weak link to increased innovation ratio.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-09T10:03:41.697Z"
+    },
+    {
+      "title": "The quality paradox of AI-generated code",
+      "link": "https://newsletter.getdx.com/p/the-quality-paradox-of-ai-generated",
+      "description": "What a five-part definition of quality from 2020 tells us about software development in the age of AI.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-09-02T10:03:27.759Z"
+    },
+    {
+      "title": "Code Quality & AI Readiness at Capital One",
+      "link": "https://newsletter.getdx.com/p/how-capital-one-assesses-ai-readiness",
+      "description": "Max Kanat-Alexander, Executive Distinguished Engineer at Capital One, discusses how AI is reshaping software development and why strong engineering…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-26T11:31:48.005Z"
+    },
+    {
+      "title": "Can “Predictable Delivery” be measured?",
+      "link": "https://newsletter.getdx.com/p/can-predictable-delivery-be-measured",
+      "description": "Five statistical techniques for turning delivery history into forecasting confidence.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-21T10:03:23.232Z"
+    },
+    {
+      "title": "Is there a relationship between cycle time and PR throughput?",
+      "link": "https://newsletter.getdx.com/p/is-there-a-relationship-between-cycle",
+      "description": "There’s a closer relationship between the two in high-throughput organizations. In low-throughput organizations, there are other variables at play.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-19T10:01:00.498Z"
+    },
+    {
+      "title": "AI in engineering: Q2 2026 benchmarks & research readout",
+      "link": "https://newsletter.getdx.com/p/ai-in-engineering-q2-2026-benchmarks",
+      "description": "Brian Houck and Justin Reock unpack DX’s latest AI Impact Report, exploring where AI is improving engineering velocity and where those gains are failing…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-14T16:00:48.271Z"
+    },
+    {
+      "title": "“Your benchmarks don't apply to us\"",
+      "link": "https://newsletter.getdx.com/p/your-benchmarks-dont-apply-to-us",
+      "description": "Why benchmark trends matter more than you think.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-14T10:06:04.840Z"
+    },
+    {
+      "title": "DX Annual 2027: San Francisco and London",
+      "link": "https://newsletter.getdx.com/p/dx-annual-2027-san-francisco-and",
+      "description": "Next year DX Annual is returning to San Francisco and heading to London for the first time. Here's what to expect and how to register your interest.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-11T15:03:28.537Z"
+    },
+    {
+      "title": "How Microsoft sees engineering bottlenecks changing with AI",
+      "link": "https://newsletter.getdx.com/p/how-microsoft-sees-engineering-bottlenecks",
+      "description": "Tim Bozarth, Microsoft CoreAI CVP, explains how AI is changing engineering productivity, why outcomes matter more than output, and what engineering…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-07T15:47:36.732Z"
+    },
+    {
+      "title": "What are code reviews even for?",
+      "link": "https://newsletter.getdx.com/p/what-are-code-reviews-even-for",
+      "description": "AI didn't break code review. It just made the parts we'd been ignoring impossible to ignore.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-08-05T10:40:18.206Z"
+    },
+    {
+      "title": "The unexpected things developer metrics can measure",
+      "link": "https://newsletter.getdx.com/p/the-unexpected-things-developer-metrics",
+      "description": "We built metrics to evaluate developer tools. They turned out to explain everything from office design to Daylight Saving Time.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-31T10:45:41.789Z"
+    },
+    {
+      "title": "Measuring the impact of AI coding tools: Capacity, not horsepower",
+      "link": "https://newsletter.getdx.com/p/measuring-the-impact-of-ai-coding",
+      "description": "Separate what to measure from how, then measure across dimensions.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-29T10:42:16.257Z"
+    },
+    {
+      "title": "Research briefing with Brian Houck: Measuring AI agents and revisiting the Core 4",
+      "link": "https://newsletter.getdx.com/p/research-briefing-with-brian-houck",
+      "description": "Justin Reock and Brian Houck explore how AI coding agents are reshaping engineering metrics and what leaders need to measure in the age of AI.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-24T13:50:33.662Z"
+    },
+    {
+      "title": "The State of AI Impact in Engineering: Q2 2026",
+      "link": "https://newsletter.getdx.com/p/the-state-of-ai-impact-in-engineering",
+      "description": "Data from 500+ teams reveals that AI is delivering measurable velocity gains, but velocity alone isn't the story.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-22T10:02:58.021Z"
+    },
+    {
+      "title": "UKG’s system for driving effective AI use",
+      "link": "https://newsletter.getdx.com/p/ukgs-system-for-driving-effective-ai-use",
+      "description": "How they created an internal dashboard that managers could use to coach and guide their teams’ AI use.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-15T10:03:30.055Z"
+    },
+    {
+      "title": "Adopting the product operating model at Priceline",
+      "link": "https://newsletter.getdx.com/p/adopting-the-product-operating-model",
+      "description": "How Priceline used developer experience metrics, organizational change, and a product operating model to improve engineering effectiveness and prepare…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-10T15:38:54.795Z"
+    },
+    {
+      "title": "Five studies changing how I think about AI in software engineering",
+      "link": "https://newsletter.getdx.com/p/five-studies-that-are-changing-how",
+      "description": "AI compressed the upstream work. What does that mean for everything downstream?",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-10T13:04:17.749Z"
+    },
+    {
+      "title": "From dashboards to decisions",
+      "link": "https://newsletter.getdx.com/p/from-dashboards-to-decisions",
+      "description": "What three real-world case studies taught us about productivity measurement that works.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-07-08T10:03:57.536Z"
+    },
+    {
+      "title": "AI and engineering productivity: Debating the headlines",
+      "link": "https://newsletter.getdx.com/p/ai-and-engineering-productivity-debating",
+      "description": "Leaders from Etsy, Twilio, GitHub, Google, and Microsoft debate how AI is changing engineering productivity, technical debt, developer roles, and the…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-29T14:07:18.922Z"
+    },
+    {
+      "title": "2x the power users: How structured AI training scaled developer productivity",
+      "link": "https://newsletter.getdx.com/p/2x-the-power-users-how-structured",
+      "description": "How Indeed drove AI coding tool adoption from 25% to 97% across 2,000 engineers, and what it learned about training, enablement, and preparing for the…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-29T14:04:35.002Z"
+    },
+    {
+      "title": "From PR throughput to product velocity: How Dropbox is rethinking productivity in the agentic era",
+      "link": "https://newsletter.getdx.com/p/from-pr-throughput-to-product-velocity",
+      "description": "How Dropbox is adapting its engineering systems, workflows, and metrics for the agentic era as AI shifts bottlenecks beyond code generation.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-29T13:59:38.159Z"
+    },
+    {
+      "title": "Revisiting the DX Core 4 in the age of AI",
+      "link": "https://newsletter.getdx.com/p/revisiting-the-dx-core-4",
+      "description": "Why the dimensions that matter most for engineering productivity remain stable, and how to interpret them as AI reshapes work.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-24T10:00:51.320Z"
+    },
+    {
+      "title": "Beyond the CLI: Agentic AI for async workloads and non-developers",
+      "link": "https://newsletter.getdx.com/p/beyond-the-cli-agentic-ai-for-async",
+      "description": "How Airbnb scaled AI adoption without mandates, why agentic AI is reshaping product development, and the infrastructure powering its vision for AI-first…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-22T13:46:55.040Z"
+    },
+    {
+      "title": "The future of engineering at Nationwide, Comcast, TD, and HPE",
+      "link": "https://newsletter.getdx.com/p/the-future-of-engineering-at-nationwide",
+      "description": "Leaders from Nationwide, Comcast, TD Bank, and HPE share how large enterprises are building AI-first engineering organizations and preparing for the…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-22T13:43:30.504Z"
+    },
+    {
+      "title": "Uber’s journey of measuring AI impact on developer productivity",
+      "link": "https://newsletter.getdx.com/p/ubers-journey-of-measuring-ai-impact",
+      "description": "How Uber evolved its approach to measuring AI’s impact on engineering, why traditional productivity metrics are breaking down, and what new frameworks…",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-22T13:42:42.228Z"
+    },
+    {
+      "title": "AI-authored code has nearly doubled, but so has PR size",
+      "link": "https://newsletter.getdx.com/p/ai-authored-code-has-nearly-doubled",
+      "description": "Findings from our analysis of over 400 organizations from the past year.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-17T10:06:27.858Z"
+    },
+    {
+      "title": "From AI experiments to organizational shift: Lessons from Mercari’s transformation",
+      "link": "https://newsletter.getdx.com/p/from-ai-experiments-to-organizational",
+      "description": "What Mercari learned after mandating 100% AI adoption—and why faster code generation didn’t automatically lead to faster software delivery.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-15T13:23:22.520Z"
+    },
+    {
+      "title": "Augmented, accelerated, autonomized: How Vanguard is embedding AI across the product lifecycle",
+      "link": "https://newsletter.getdx.com/p/augmented-accelerated-autonomized",
+      "description": "How Vanguard is scaling AI across 800+ product teams by moving beyond coding assistants and transforming the entire product development lifecycle.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-15T13:21:55.311Z"
+    },
+    {
+      "title": "Prioritization as code: An AI-supported framework for platform engineering",
+      "link": "https://newsletter.getdx.com/p/prioritization-as-code-an-ai-supported",
+      "description": "How SiriusXM built a data-driven framework for platform engineering prioritization by making assumptions visible, measurable, and easier to challenge.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-15T13:20:13.771Z"
+    },
+    {
+      "title": "Doubling the productivity of your engineering team using AI",
+      "link": "https://newsletter.getdx.com/p/doubling-the-productivity-of-your",
+      "description": "How Intercom doubled engineering throughput in nine months by making AI agents a core part of how engineers work.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-15T13:18:36.257Z"
+    },
+    {
+      "title": "Five years later: Reflecting on SPACE with the people who built it",
+      "link": "https://newsletter.getdx.com/p/five-years-later-reflecting-on-space",
+      "description": "The authors of SPACE met in person for the first time. Here's what five years of AI, remote work, and real-world use taught them.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-09T15:25:05.261Z"
+    },
+    {
+      "title": "Designing the AI‑native engineering organization with 1Password, Microsoft and Atlassian",
+      "link": "https://newsletter.getdx.com/p/designing-the-ainative-engineering",
+      "description": "Engineering leaders from Microsoft, Atlassian, and 1Password discuss how AI is reshaping teams, workflows, and the role of engineers.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-08T15:03:37.023Z"
+    },
+    {
+      "title": "Beyond AI tools: Evolving software engineering organizations for the agentic era",
+      "link": "https://newsletter.getdx.com/p/beyond-ai-tools-evolving-software",
+      "description": "Dell’s Jennifer St Pierre explains why the hardest part of AI adoption is leading people through change, not deploying the technology.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-08T15:03:04.762Z"
+    },
+    {
+      "title": "Mapping the new SDLC at BNY: Codifying AI into every step of the delivery lifecycle (Jason Valentino)",
+      "link": "https://newsletter.getdx.com/p/mapping-the-new-sdlc-at-bny-codifying",
+      "description": "BNY’s AI strategy focuses on optimizing the entire engineering workflow, from planning to production.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-08T15:00:49.994Z"
+    },
+    {
+      "title": "The current impact of AI on engineering velocity",
+      "link": "https://newsletter.getdx.com/p/the-current-impact-of-ai-on-engineering",
+      "description": "DX’s latest data reveals the reality behind AI-driven engineering productivity gains.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-08T14:58:23.268Z"
+    },
+    {
+      "title": "8 myths on software engineering and AI",
+      "link": "https://newsletter.getdx.com/p/8-myths-on-software-engineering-and",
+      "description": "What the latest research actually says about AI's impact on developers, and where leaders are still getting it wrong.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-06-03T10:15:29.326Z"
+    },
+    {
+      "title": "The AI efficiency plateau",
+      "link": "https://newsletter.getdx.com/p/the-ai-efficiency-plateau",
+      "description": "Tracking the trajectory of developer time savings from AI",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-05-27T10:08:50.681Z"
+    },
+    {
+      "title": "AI productivity debate",
+      "link": "https://newsletter.getdx.com/p/ai-productivity-debate",
+      "description": "Researchers and practitioners weigh in on AI’s current and future impact.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-05-20T10:03:30.299Z"
+    },
+    {
+      "title": "The AI-native developer",
+      "link": "https://newsletter.getdx.com/p/the-ai-native-developer",
+      "description": "Findings from a new study on how AI is reshaping the developer role.",
+      "firstSeen": "2026-10-24T17:22:12.621Z",
+      "date": "2026-05-14T16:55:35.169Z"
+    }
+  ]
+}

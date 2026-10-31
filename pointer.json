@@ -1,0 +1,112 @@
+{
+  "title": "Pointer",
+  "selectors": {
+    "item": "div.transparent.h-full.cursor-pointer",
+    "title": "h2",
+    "link": "a[data-discover='true'][href^='/p/']",
+    "date": "time",
+    "description": "p",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "detected_at": "2026-10-24T17:21:24.566Z"
+  },
+  "items": [
+    {
+      "title": "Issue #764",
+      "link": "https://pointerio.beehiiv.com/p/issue-764",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-31T10:55:47.633Z",
+      "date": "2026-10-30T13:00:00.000Z"
+    },
+    {
+      "title": "Issue #763",
+      "link": "https://pointerio.beehiiv.com/p/issue-763",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-28T11:20:54.427Z",
+      "date": "2026-10-27T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #762",
+      "link": "https://pointerio.beehiiv.com/p/issue-762",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-23T13:00:00.000Z"
+    },
+    {
+      "title": "Issue #761",
+      "link": "https://pointerio.beehiiv.com/p/issue-761",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-20T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #760",
+      "link": "https://pointerio.beehiiv.com/p/issue-760",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-16T13:00:00.000Z"
+    },
+    {
+      "title": "Issue #759",
+      "link": "https://pointerio.beehiiv.com/p/issue-759",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-13T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #758",
+      "link": "https://pointerio.beehiiv.com/p/issue-758",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-09T14:00:00.000Z"
+    },
+    {
+      "title": "Issue #757",
+      "link": "https://pointerio.beehiiv.com/p/issue-757",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-06T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #756",
+      "link": "https://pointerio.beehiiv.com/p/issue-756",
+      "description": "The Briefing For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-10-02T13:45:00.000Z"
+    },
+    {
+      "title": "Issue #755",
+      "link": "https://pointerio.beehiiv.com/p/issue-755",
+      "description": "Essential Reading For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-09-29T13:45:00.000Z"
+    },
+    {
+      "title": "Issue #754",
+      "link": "https://pointerio.beehiiv.com/p/issue-754",
+      "description": "Essential Reading For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-09-25T14:00:00.000Z"
+    },
+    {
+      "title": "Issue #753",
+      "link": "https://pointerio.beehiiv.com/p/issue-753",
+      "description": "Essential Reading For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-09-22T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #752",
+      "link": "https://pointerio.beehiiv.com/p/issue-752",
+      "description": "Essential Reading For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-09-18T13:30:00.000Z"
+    },
+    {
+      "title": "Issue #751",
+      "link": "https://pointerio.beehiiv.com/p/issue-751",
+      "description": "Essential Reading For Engineering Leaders",
+      "firstSeen": "2026-10-24T17:21:24.566Z",
+      "date": "2026-09-15T12:00:00.000Z"
+    }
+  ]
+}

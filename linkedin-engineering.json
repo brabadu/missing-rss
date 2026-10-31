@@ -1,0 +1,98 @@
+{
+  "title": "LinkedIn Engineering",
+  "selectors": {
+    "item": "#all-posts ul.grid-layout__posts li.post-list__item",
+    "title": "div.grid-post__title a",
+    "link": "a.grid-post__link",
+    "date": "div.grid-post__byline p.grid-post__date",
+    "description": null,
+    "model": "cohere/north-mini-code:free",
+    "detected_at": "2026-10-22T20:40:05.469Z"
+  },
+  "items": [
+    {
+      "title": "From Member Tap to Backend: How LinkedIn Traced the Member Jou...",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/from-membertap-to-backend-how-linkedin-traced-the-member-journey-with-opentelemetry",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "title": "Rebuilding LinkedIn's Tracking Infrastructure: Scaling, Migrat...",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/rebuilding-linkedins-tracking-infrastructure-scaling-migrating-and-hardening-a-high-volume-event-pipeline",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-10-20T00:00:00.000Z"
+    },
+    {
+      "title": "Scaling Spark and Flink Shuffle at LinkedIn with Apache Celeborn",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/scaling-spark-and-flink-shuffle-at-linkedin-with-apache-celeborn",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "title": "Inside LinkedIn's data context layer: curating trustworthy con...",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/inside-linkedins-data-context-layer-curating-trustworthy-context-for-humans-and-agents",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-10-09T00:00:00.000Z"
+    },
+    {
+      "title": "Infrastructure efficiency: How a classic math problem helped r...",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/infrastructure-efficiency-how-a-classic-math-problem-helped-reduced-our-capacity-buffers",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-09-14T00:00:00.000Z"
+    },
+    {
+      "title": "Announcing Our LinkedIn-Cornell 2026 Grant Recipients",
+      "link": "https://www.linkedin.com/blog/engineering/culture/announcing-our-linkedin-cornell-2026-grant-recipients",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "title": "Building LinkedIn Premium All‑in‑One: Unified AI‑Powered Workf...",
+      "link": "https://www.linkedin.com/blog/engineering/member-customer-experience/building-linkedin-premium-all-in-one-unified-ai-powered-workflows-for-small-businesses",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-08-27T00:00:00.000Z"
+    },
+    {
+      "title": "Rebuilding LinkedIn’s Follows Recommendations with LLM-Based S...",
+      "link": "https://www.linkedin.com/blog/engineering/ai/rebuilding-linkedins-follows-recommendations-with-llm-based-semantic-retrieval-and-ranking",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-08-24T00:00:00.000Z"
+    },
+    {
+      "title": "High-Signal AI Code Review That Adapts to Your Codebase at Scale",
+      "link": "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-08-13T00:00:00.000Z"
+    },
+    {
+      "title": "The Training Infrastructure Behind AI-Powered Job Search: 8X F...",
+      "link": "https://www.linkedin.com/blog/engineering/infrastructure/the-training-infrastructure-behind-ai-powered-job-search-eight-x-faster-multi-teacher-distillation",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "title": "Quality Assurance Agent: Reimagining Software Quality with AI-...",
+      "link": "https://www.linkedin.com/blog/engineering/ai/qa-agent-reimagining-software-quality-with-ai-driven-autonomous-testing",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-06-18T00:00:00.000Z"
+    },
+    {
+      "title": "Accelerating Go-To-Market Velocity with the Product Configurat...",
+      "link": "https://www.linkedin.com/blog/engineering/platform-platformization/accelerating-go-to-market-velocity-with-the-product-configuration-center",
+      "description": "",
+      "firstSeen": "2026-10-22T20:40:05.469Z",
+      "date": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

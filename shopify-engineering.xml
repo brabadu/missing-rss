@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shopify Engineering</title>
+    <link>https://shopify.engineering/latest</link>
+    <description>Unofficial RSS feed for https://shopify.engineering/latest</description>
+    <atom:link href="https://brabadu.github.io/missing-rss/shopify-engineering.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 31 Oct 2026 10:55:38 GMT</lastBuildDate>
+    <item>
+      <title>Mobile</title>
+      <link>https://shopify.engineering/topics/mobile</link>
+      <guid isPermaLink="true">https://shopify.engineering/topics/mobile</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>AI &amp; Machine Learning</title>
+      <link>https://shopify.engineering/topics/ai-machine-learning</link>
+      <guid isPermaLink="true">https://shopify.engineering/topics/ai-machine-learning</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Apps</title>
+      <link>https://shopify.engineering/topics/apps</link>
+      <guid isPermaLink="true">https://shopify.engineering/topics/apps</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Culture</title>
+      <link>https://shopify.engineering/topics/culture</link>
+      <guid isPermaLink="true">https://shopify.engineering/topics/culture</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://shopify.engineering/topics/infrastructure</link>
+      <guid isPermaLink="true">https://shopify.engineering/topics/infrastructure</guid>
+      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pointer</title>
+    <link>https://pointerio.beehiiv.com</link>
+    <description>Unofficial RSS feed for https://pointerio.beehiiv.com</description>
+    <atom:link href="https://brabadu.github.io/missing-rss/pointer.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 31 Oct 2026 10:55:47 GMT</lastBuildDate>
+    <item>
+      <title>Issue #764</title>
+      <link>https://pointerio.beehiiv.com/p/issue-764</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-764</guid>
+      <pubDate>Fri, 30 Oct 2026 13:00:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #763</title>
+      <link>https://pointerio.beehiiv.com/p/issue-763</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-763</guid>
+      <pubDate>Tue, 27 Oct 2026 13:30:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #762</title>
+      <link>https://pointerio.beehiiv.com/p/issue-762</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-762</guid>
+      <pubDate>Fri, 23 Oct 2026 13:00:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #761</title>
+      <link>https://pointerio.beehiiv.com/p/issue-761</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-761</guid>
+      <pubDate>Tue, 20 Oct 2026 13:30:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #760</title>
+      <link>https://pointerio.beehiiv.com/p/issue-760</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-760</guid>
+      <pubDate>Fri, 16 Oct 2026 13:00:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #759</title>
+      <link>https://pointerio.beehiiv.com/p/issue-759</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-759</guid>
+      <pubDate>Tue, 13 Oct 2026 13:30:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #758</title>
+      <link>https://pointerio.beehiiv.com/p/issue-758</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-758</guid>
+      <pubDate>Fri, 09 Oct 2026 14:00:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #757</title>
+      <link>https://pointerio.beehiiv.com/p/issue-757</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-757</guid>
+      <pubDate>Tue, 06 Oct 2026 13:30:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #756</title>
+      <link>https://pointerio.beehiiv.com/p/issue-756</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-756</guid>
+      <pubDate>Fri, 02 Oct 2026 13:45:00 GMT</pubDate>
+      <description>The Briefing For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #755</title>
+      <link>https://pointerio.beehiiv.com/p/issue-755</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-755</guid>
+      <pubDate>Tue, 29 Sep 2026 13:45:00 GMT</pubDate>
+      <description>Essential Reading For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #754</title>
+      <link>https://pointerio.beehiiv.com/p/issue-754</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-754</guid>
+      <pubDate>Fri, 25 Sep 2026 14:00:00 GMT</pubDate>
+      <description>Essential Reading For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #753</title>
+      <link>https://pointerio.beehiiv.com/p/issue-753</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-753</guid>
+      <pubDate>Tue, 22 Sep 2026 13:30:00 GMT</pubDate>
+      <description>Essential Reading For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #752</title>
+      <link>https://pointerio.beehiiv.com/p/issue-752</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-752</guid>
+      <pubDate>Fri, 18 Sep 2026 13:30:00 GMT</pubDate>
+      <description>Essential Reading For Engineering Leaders</description>
+    </item>
+    <item>
+      <title>Issue #751</title>
+      <link>https://pointerio.beehiiv.com/p/issue-751</link>
+      <guid isPermaLink="true">https://pointerio.beehiiv.com/p/issue-751</guid>
+      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Essential Reading For Engineering Leaders</description>
+    </item>
+  </channel>
+</rss>

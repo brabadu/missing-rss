@@ -1,0 +1,56 @@
+{
+  "title": "Meta AI Developer Blog",
+  "selectors": {
+    "item": "div.astryx-stack.vertical.gap-6 > div > a",
+    "title": "span.pk50ysn",
+    "link": null,
+    "date": null,
+    "description": "span.p1j61zf2",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "detected_at": "2026-10-22T20:24:25.908Z"
+  },
+  "items": [
+    {
+      "title": "Build with Muse Spark Open",
+      "link": "https://dev.meta.ai/resources/blog/build-with-muse-spark-open",
+      "description": "Download Muse Spark Open, an 816B open-weight model for agentic coding. Serve it with SGLang, vLLM or Apple MLX, run it on hosted APIs, or fine-tune it.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    },
+    {
+      "title": "Put your ideas to work with Muse Wonder and Muse Wonder Full",
+      "link": "https://dev.meta.ai/resources/blog/build-with-muse-wonder",
+      "description": "Muse Wonder supports frontier coding, long-running agents and advanced computer use to tackle developers’ most critical workflows.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    },
+    {
+      "title": "Build with Muse Voice Transcribe on Meta Model API",
+      "link": "https://dev.meta.ai/resources/blog/meet-muse-voice-transcribe-streaming-speech-to-text",
+      "description": "Streaming speech-to-text transcription and diarization are now available on Meta Model API.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    },
+    {
+      "title": "Muse Code: New plans and features",
+      "link": "https://dev.meta.ai/resources/blog/muse-code-new-plans-and-features",
+      "description": "Muse Code is now out of beta with new features and updates designed to help you work faster and smarter.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    },
+    {
+      "title": "Muse Image: generate, edit, and compose images on Meta Model API",
+      "link": "https://dev.meta.ai/resources/blog/build-with-muse-Image",
+      "description": "Muse Image is now on Meta Model API at $0.01/image. A reasoning model that plans layout before drawing, with anchored composition for consistent edits.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    },
+    {
+      "title": "Muse Glimmer: an open-weight model built for local agents | AI Developers blog",
+      "link": "https://dev.meta.ai/resources/blog/build-with-muse-glimmer",
+      "description": "An agent that manages your schedule, drafts your replies and organizes your files needs deep access to your context.",
+      "firstSeen": "2026-10-22T20:24:25.908Z",
+      "date": "2026-10-22T20:24:25.908Z"
+    }
+  ]
+}

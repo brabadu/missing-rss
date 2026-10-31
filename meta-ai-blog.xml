@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta AI Developer Blog</title>
+    <link>https://dev.meta.ai/resources/blog</link>
+    <description>Unofficial RSS feed for https://dev.meta.ai/resources/blog</description>
+    <atom:link href="https://brabadu.github.io/missing-rss/meta-ai-blog.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 31 Oct 2026 10:55:33 GMT</lastBuildDate>
+    <item>
+      <title>Build with Muse Spark Open</title>
+      <link>https://dev.meta.ai/resources/blog/build-with-muse-spark-open</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/build-with-muse-spark-open</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>Download Muse Spark Open, an 816B open-weight model for agentic coding. Serve it with SGLang, vLLM or Apple MLX, run it on hosted APIs, or fine-tune it.</description>
+    </item>
+    <item>
+      <title>Put your ideas to work with Muse Wonder and Muse Wonder Full</title>
+      <link>https://dev.meta.ai/resources/blog/build-with-muse-wonder</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/build-with-muse-wonder</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>Muse Wonder supports frontier coding, long-running agents and advanced computer use to tackle developers’ most critical workflows.</description>
+    </item>
+    <item>
+      <title>Build with Muse Voice Transcribe on Meta Model API</title>
+      <link>https://dev.meta.ai/resources/blog/meet-muse-voice-transcribe-streaming-speech-to-text</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/meet-muse-voice-transcribe-streaming-speech-to-text</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>Streaming speech-to-text transcription and diarization are now available on Meta Model API.</description>
+    </item>
+    <item>
+      <title>Muse Code: New plans and features</title>
+      <link>https://dev.meta.ai/resources/blog/muse-code-new-plans-and-features</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/muse-code-new-plans-and-features</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>Muse Code is now out of beta with new features and updates designed to help you work faster and smarter.</description>
+    </item>
+    <item>
+      <title>Muse Image: generate, edit, and compose images on Meta Model API</title>
+      <link>https://dev.meta.ai/resources/blog/build-with-muse-Image</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/build-with-muse-Image</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>Muse Image is now on Meta Model API at $0.01/image. A reasoning model that plans layout before drawing, with anchored composition for consistent edits.</description>
+    </item>
+    <item>
+      <title>Muse Glimmer: an open-weight model built for local agents | AI Developers blog</title>
+      <link>https://dev.meta.ai/resources/blog/build-with-muse-glimmer</link>
+      <guid isPermaLink="true">https://dev.meta.ai/resources/blog/build-with-muse-glimmer</guid>
+      <pubDate>Thu, 22 Oct 2026 20:24:25 GMT</pubDate>
+      <description>An agent that manages your schedule, drafts your replies and organizes your files needs deep access to your context.</description>
+    </item>
+  </channel>
+</rss>
