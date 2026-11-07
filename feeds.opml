@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Missing RSS</title></head>
+  <body>
+    <outline type="rss" text="Anthropic Engineering" title="Anthropic Engineering" xmlUrl="https://brabadu.github.io/missing-rss/anthropic-engineering.xml" htmlUrl="https://www.anthropic.com/engineering"/>
+    <outline type="rss" text="Meta AI Developer Blog" title="Meta AI Developer Blog" xmlUrl="https://brabadu.github.io/missing-rss/meta-ai-blog.xml" htmlUrl="https://dev.meta.ai/resources/blog"/>
+    <outline type="rss" text="Shopify Engineering" title="Shopify Engineering" xmlUrl="https://brabadu.github.io/missing-rss/shopify-engineering.xml" htmlUrl="https://shopify.engineering/latest"/>
+    <outline type="rss" text="LinkedIn Engineering" title="LinkedIn Engineering" xmlUrl="https://brabadu.github.io/missing-rss/linkedin-engineering.xml" htmlUrl="https://www.linkedin.com/blog/engineering"/>
+    <outline type="rss" text="Pointer" title="Pointer" xmlUrl="https://brabadu.github.io/missing-rss/pointer.xml" htmlUrl="https://pointerio.beehiiv.com"/>
+    <outline type="rss" text="Engineering Enablement by DX" title="Engineering Enablement by DX" xmlUrl="https://brabadu.github.io/missing-rss/dx-newsletter.xml" htmlUrl="https://newsletter.getdx.com/archive"/>
+    <outline type="rss" text="Papers With Backtest" title="Papers With Backtest" xmlUrl="https://brabadu.github.io/missing-rss/papers-with-backtest.xml" htmlUrl="https://paperswithbacktest.substack.com/archive"/>
+  </body>
+</opml>
